@@ -1,0 +1,3 @@
+== D:\VS CODE\PROJECT\hanwebgame\reverse\extracted\han\PLAY.BAT ==
+00000000  40 65 63 68 6F 20 6F 66 66 0D 0A 73 6F 75 6E 64  @echo off..sound
+00000010  20 62 37 30 30 30 0D 0A 68 61 6E 0D 0A            b7000..han..

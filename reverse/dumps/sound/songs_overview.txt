@@ -1,0 +1,71 @@
+SONGS.IDX size=12
+song starts: ['0x0000', '0x196D', '0x267E']
+SONGS.GRP size = 0x33D1
+song 0: [0x0000, 0x196D) len=6509
+song 1: [0x196D, 0x267E) len=3345
+song 2: [0x267E, 0x33D1) len=3411
+
+====================
+SONG 0  off 0x0000 len 6509
+  header bytes: 00 00 04 00 5c 72 6f 6c 6c 5c 64 65 66 61 75 6c
+    @00D1 Voix  0
+    @01EB Voix  1
+    @0485 Voix  2
+    @071F Voix  3
+    @09B9 Voix  4
+    @0C97 Voix  5
+    @0DF9 Voix  6
+    @0FD3 Voix  7
+    @11FF Voix  8
+    @14D1 Voix  9
+  inst trumpet1  at ['0x1b1']
+  inst piano1    at ['0x44b', '0x6e5', '0x97f', '0xc5d', '0xdbf']
+  inst bdrum1    at ['0xf99']
+  inst snare1    at ['0x1117']
+  inst tom1      at ['0x1497']
+  inst cymbal1   at ['0x1551']
+  inst hihat1    at ['0x1933']
+  'Tempo' @00B6  tail: 54 65 6d 70 6f 00 d2 2b c6 38 e2 15 00 00 d6 00 00 f0 42 01 00 00 00 00 00 80 3f 56 6f 69 78 20
+====================
+SONG 1  off 0x196D len 3345
+  header bytes: 00 00 04 00 5c 72 6f 6c 6c 5c 64 65 66 61 75 6c
+    @1A3E Voix  0
+    @1C0C Voix  1
+    @1D06 Voix  2
+    @1E00 Voix  3
+    @1EFA Voix  4
+    @2062 Voix  5
+    @2118 Voix  6
+    @22B6 Voix  7
+    @23B4 Voix  8
+    @242A Voix  9
+  inst piano1    at ['0x1bd2', '0x1ccc', '0x1dc6', '0x1ec0', '0x2022', '0x20de']
+  inst bdrum1    at ['0x227c']
+  inst snare1    at ['0x237a']
+  inst tom1      at ['0x23f0']
+  inst cymbal1   at ['0x2456']
+  inst hihat1    at ['0x2644']
+  'Tempo' @1A23  tail: 54 65 6d 70 6f 00 d2 2b e0 41 e2 15 00 00 d2 00 00 f0 42 01 00 00 00 33 33 93 3f 56 6f 69 78 20
+====================
+SONG 2  off 0x267E len 3411
+  header bytes: 00 00 04 00 5c 72 6f 6c 6c 5c 64 65 66 61 75 6c
+    @274F Voix  0
+    @282D Voix  1
+    @288B Voix  2
+    @28E9 Voix  3
+    @2947 Voix  4
+    @29A5 Voix  5
+    @2A03 Voix  6
+    @2CE1 Voix  7
+    @303B Voix  8
+    @3315 Voix  9
+  inst trumpet1  at ['0x27f3']
+  inst piano1    at ['0x2851', '0x28af', '0x290d', '0x296b', '0x29c9']
+  inst bdrum1    at ['0x2ca7']
+  inst snare1    at ['0x3001']
+  inst tom1      at ['0x32db']
+  inst cymbal1   at ['0x3339']
+  inst hihat1    at ['0x3397']
+  'Tempo' @2734  tail: 54 65 6d 70 6f 00 d2 2b e0 41 e2 15 00 00 d2 00 00 f0 42 01 00 00 00 00 00 80 3f 56 6f 69 78 20
+
+STANDARD.BNK name fields found: ['BDRUM1', 'CYMBAL1', 'HIHAT1', 'PIANO1', 'SNARE1', 'TRUMPET1']

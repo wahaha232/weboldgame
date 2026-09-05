@@ -1,0 +1,7 @@
+dosbox0.63
+
+進入bosbox後,依照下面輸入執行遊戲
+mount c c:\
+c:
+cd han
+play (要用右方數字控制方向,空白鍵確定,有時enter也會用到)

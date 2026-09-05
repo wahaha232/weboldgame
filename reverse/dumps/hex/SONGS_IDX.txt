@@ -1,0 +1,2 @@
+== D:\VS CODE\PROJECT\hanwebgame\reverse\extracted\han\SONGS.IDX ==
+00000000  00 00 00 00 6D 19 00 00 7E 26 00 00              ....m...~&..
