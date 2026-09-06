@@ -2,59 +2,50 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8"/>
-<title>楚漢之爭 — Web 重製雛形</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>楚漢之爭 — 首頁</title>
 <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-<div id="menu" class="overlay show">
-  <div class="box">
-    <h1>楚漢之爭</h1>
-    <p class="sub">Web 可玩重製雛形(v1)<br/><span class="warn">部分規則為「重製設定」,未經原版驗證</span></p>
-    <button id="btnNew">新遊戲</button>
-    <button id="btnLoad">繼續(讀取)</button>
-  </div>
-</div>
+<body class="home">
+<nav class="homenav">
+  <div class="brand">楚漢之爭</div>
+  <a class="navbtn" href="game.html">進入遊戲</a>
+</nav>
 
-<div id="picker" class="overlay hidden">
-  <div class="box">
-    <h2>選擇君主</h2>
-    <div id="rulerList"></div>
-    <button id="btnStart">確定</button>
-    <p class="hint">選擇 1 位君主,其餘勢力(含秦)由電腦操控。方向:數字鍵盤或點擊。</p>
+<header class="hero">
+  <h1>楚漢之爭</h1>
+  <p class="tag">1990 智冠 DOS 策略遊戲 · Web 可玩重製雛形</p>
+  <div class="herobtn">
+    <a class="big" href="game.html">▶ 開始遊戲</a>
+    <a class="big sec" href="#about">玩法說明</a>
   </div>
-</div>
+</header>
 
-<div id="game" class="hidden">
-  <header>
-    <div class="f"><img id="faceSmall" alt=""/><div><b id="pName"></b><br/><span id="pStats"></span></div></div>
-    <div class="t"><div id="yearMon"></div><div id="global"></div></div>
-  </header>
-  <main>
-    <section id="mapWrap">
-      <svg id="map" viewBox="0 0 100 76"></svg>
-    </section>
-    <aside id="side">
-      <div id="selCity" class="panel">
-        <h3 id="cityTitle">選取城市</h3>
-        <div id="cityInfo"></div>
-        <div id="cityActions"></div>
-      </div>
-      <div id="diplo" class="panel hidden">
-        <h3>外交</h3>
-        <select id="diploTarget"></select>
-        <button id="btnDiplo">獻金 1000(停戰 10 回合)</button>
-      </div>
-      <div class="panel">
-        <h3>指令</h3>
-        <button id="btnTurn">結束回合(月份+1)</button>
-        <button id="btnSave">存檔</button>
-        <button id="btnMenu2">主選單</button>
-      </div>
-    </aside>
-  </main>
-  <footer id="log"></footer>
-</div>
-<script src="data.js"></script>
-<script src="game.js"></script>
+<section id="about" class="cards">
+  <div class="card"><h3>🗺 回合制地圖</h3><p>39 座城、9 股勢力(含秦)。點選城市下達指令,回合結束月份 +1。</p></div>
+  <div class="card"><h3>⚔ 內政與戰爭</h3><p>開發城池、徵兵、出兵攻打鄰城,或以金錢外交停戰。</p></div>
+  <div class="card"><h3>📜 取材自逆向分析</h3><p>城市/人物名、畫面圖與頭像皆來自原始 DOS 檔案逆向;詳見 reverse 專案。</p></div>
+</section>
+
+<section class="rulers">
+  <h2>可選君主(8 位)</h2>
+  <div id="homeRulers"></div>
+</section>
+
+<footer class="note">
+  <p><b>重製設定聲明:</b>地圖座標、起始配置、AI 與勝利條件為「重製設定」,未經原版驗證,日後將依逆向結果校正。</p>
+  <p><a href="game.html">進入遊戲</a> · 分析文件:reverse/reports/remake_spec_v1.md</p>
+</footer>
+
+<script>
+(function(){
+  var list = document.getElementById("homeRulers");
+  ["劉邦","項梁","武臣","韓廣","魏咎","田儋","東勝","吳芮"].forEach(function(n,i){
+    var d=document.createElement("div");
+    d.innerHTML='<img src="img/face/face_'+String(i).padStart(2,"0")+'.png" alt=""/><b>'+n+'</b>';
+    list.appendChild(d);
+  });
+})();
+</script>
 </body>
 </html>

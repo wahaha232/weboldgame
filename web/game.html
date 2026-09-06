@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<title>楚漢之爭 — Web 重製雛形</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<a id="homeLink" href="index.html">&larr; 回首頁</a>
+<div id="menu" class="overlay show">
+  <div class="box">
+    <h1>楚漢之爭</h1>
+    <p class="sub">Web 可玩重製雛形(v1)<br/><span class="warn">部分規則為「重製設定」,未經原版驗證</span></p>
+    <button id="btnNew">新遊戲</button>
+    <button id="btnLoad">繼續(讀取)</button>
+  </div>
+</div>
+
+<div id="picker" class="overlay hidden">
+  <div class="box">
+    <h2>選擇君主</h2>
+    <div id="rulerList"></div>
+    <button id="btnStart">確定</button>
+    <p class="hint">選擇 1 位君主,其餘勢力(含秦)由電腦操控。方向:數字鍵盤或點擊。</p>
+  </div>
+</div>
+
+<div id="game" class="hidden">
+  <header>
+    <div class="f"><img id="faceSmall" alt=""/><div><b id="pName"></b><br/><span id="pStats"></span></div></div>
+    <div class="t"><div id="yearMon"></div><div id="global"></div></div>
+  </header>
+  <main>
+    <section id="mapWrap">
+      <svg id="map" viewBox="0 0 100 76"></svg>
+    </section>
+    <aside id="side">
+      <div id="selCity" class="panel">
+        <h3 id="cityTitle">選取城市</h3>
+        <div id="cityInfo"></div>
+        <div id="cityActions"></div>
+      </div>
+      <div id="diplo" class="panel hidden">
+        <h3>外交</h3>
+        <select id="diploTarget"></select>
+        <button id="btnDiplo">獻金 1000(停戰 10 回合)</button>
+      </div>
+      <div class="panel">
+        <h3>指令</h3>
+        <button id="btnTurn">結束回合(月份+1)</button>
+        <button id="btnSave">存檔</button>
+        <button id="btnMenu2">主選單</button>
+      </div>
+    </aside>
+  </main>
+  <footer id="log"></footer>
+</div>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
