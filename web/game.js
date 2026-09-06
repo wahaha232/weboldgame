@@ -83,7 +83,7 @@ function defeatFaction(id){
   S.cities.forEach(function(c){ if(c.o===id){ c.o=-1; c.army=Math.floor(c.army*0.8); } });
   log(NAMES9[id]+" 已滅亡。");
 }
-function checkFactions(){ S.factions.forEach(defeatFaction); recount(); }
+function checkFactions(){ S.factions.forEach(function(f,k){ defeatFaction(k); }); recount(); }
 function aiTurn(){
   S.factions.forEach(function(f,k){
     if(k===S.sel || !f.alive) return;
