@@ -3,14 +3,14 @@
     {
       "id": "han",
       "title": "楚漢相爭",
-      "folder": "/games/han/",
-      "executable": "HAN.EXE",
-      "status": "available",
       "titles": {
         "zh": "楚漢相爭",
         "en": "Chu-Han Contest",
         "es": "La Disputa Chu-Han"
-      }
+      },
+      "bundle": "games/han_v4.jsdos",
+      "status": "available"
     }
   ]
 }
+

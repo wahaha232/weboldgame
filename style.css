@@ -39,3 +39,22 @@ html, body { margin:0; padding:0; background:#008080; font-family:"Consolas","Co
 #btnRetry { background:#c0c0c0; border:2px outset #fff; padding:8px 24px; font-family:inherit; cursor:pointer; }
 .hidden { display:none !important; }
 .meta { font-size:11px; }
+
+/* --- DOS emulator active screen / fullscreen --- */
+#screen { position:relative; }
+#screen.dos-active { height:480px; padding:0; overflow:hidden; background:#000; }
+#emulatorHost { position:absolute; left:0; top:0; width:100%; height:100%; background:#000; }
+#screen:fullscreen, #screen:-webkit-full-screen { width:100%; height:100%; padding:0; }
+.bootOverlay { position:absolute; left:0; top:0; right:0; bottom:0; z-index:20; background:#000; color:#00ff00; display:flex; align-items:center; justify-content:center; }
+.bootLines { font-family:"Consolas","Courier New",monospace; font-size:15px; line-height:1.9; text-align:left; text-shadow:0 0 8px #00ff00; margin:0; padding:10px; }
+
+/* --- controls --- */
+#controls { margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; }
+#controls button { background:#c0c0c0; border:2px outset #fff; color:#000; font-family:inherit; font-size:13px; padding:6px 12px; cursor:pointer; }
+#controls button:focus { outline:2px dotted #000; }
+#controls button:hover:not(:disabled) { background:#e0e0e0; }
+#controls button:disabled { color:#808080; border-style:groove; cursor:not-allowed; }
+
+/* --- game list error --- */
+.errMsg { color:#800000; font-weight:bold; font-size:13px; background:#fff; border:1px inset #808080; padding:8px; }
+

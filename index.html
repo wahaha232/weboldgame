@@ -8,7 +8,7 @@
 <meta property="og:title" content="DOS Classic Games"/>
 <meta property="og:description" content="Play classic DOS games directly in your web browser."/>
 <meta property="og:type" content="website"/>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css?v=20260906.1"/>
 </head>
 <body>
 <div id="shell">
@@ -34,14 +34,14 @@
   <main id="content">
     <section id="emulator" aria-label="DOS emulator">
       <div id="screen" tabindex="0" role="img" aria-label="DOS emulator screen">
-        <div class="prompt" data-i18n="prompt_line1">C:&gt; HAN.EXE</div>
+        <div class="prompt" data-i18n="prompt_line1">C:&gt; PLAY</div>
         <div class="game" data-i18n="prompt_line2">楚漢相爭</div>
-        <div id="emulatorNote" class="note hidden" data-i18n="emulator_soon"></div>
       </div>
       <div id="controls">
-        <button id="btnPlay" data-i18n="btn_play">▶ PLAY</button>
-        <button id="btnFull" data-i18n="btn_full">⛶ FULLSCREEN</button>
-        <button id="btnSound" data-i18n="btn_sound">🔊 SOUND</button>
+        <button id="btnPlay" type="button" data-i18n="btn_play">▶ PLAY</button>
+        <button id="btnFull" type="button" data-i18n="btn_full">⛶ FULLSCREEN</button>
+        <button id="btnSound" type="button" data-i18n="btn_sound">🔊 SOUND ON</button>
+        <button id="btnReset" type="button" data-i18n="btn_reset" disabled>↺ RESET</button>
       </div>
     </section>
 
@@ -61,16 +61,16 @@
 </div>
 
 <div id="errorScreen" class="hidden" role="alert">
-  <pre>DOS GAME ERROR
+  <pre id="errCode">DOS GAME ERROR
 |
 Unable to start game.
 Possible causes:
 Game files missing / Emulator failed</pre>
   <p id="errDetail" class="meta"></p>
-  <button id="btnRetry">RETRY</button>
+  <button id="btnRetry" type="button">RETRY</button>
 </div>
 
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
+<script src="js/i18n.js?v=20260906.1"></script>
+<script src="js/main.js?v=20260906.1"></script>
 </body>
 </html>
